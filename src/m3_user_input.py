@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (5 pts)
+# DONE: 1. (5 pts)
 #   Immediately below this _TODO_, write code that:
 #     - Asks the user what their name is
 #     - Waits for the user to input their name and hit enter
@@ -27,9 +27,14 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+name = "Please Enter Your Name"
+print(name)
+user_input = input("Enter username")
+print("Username is " + user_input)
+print("Welcome" + " " + user_input + " " + "to the squad")
 
 ###############################################################################
-# TODO: 2. (5 pt)
+# DONE: 2. (5 pt)
 #   Now you might be thinking, why didn't we just use concatenation to do this?
 #   Isn't it just the same thing?
 #
@@ -72,3 +77,9 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+question = user_input + " " + "Whats your favorate number?"
+print(question)
+input_answer = input("Enter Favorate Number ")
+input_answer = int(input_answer)
+print("Interger value:", input_answer)
+print(f"{user_input}, thats your callsign private {input_answer}. Deal with it")
